@@ -100,7 +100,7 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1
       pub-test-kaku:
-        specifier: 0.0.5
+        specifier: ^0.0.5
         version: 0.0.5(agora-rtc-sdk-ng@4.17.0)(react@18.2.0)
       react:
         specifier: ^18.2.0
@@ -179,7 +179,7 @@ importers:
         specifier: ^3.4.3
         version: 3.4.3(mobx@6.8.0)(react-dom@18.2.0)(react@18.2.0)
       pub-test-kaku:
-        specifier: 0.0.5
+        specifier: ^0.0.5
         version: 0.0.5(agora-rtc-sdk-ng@4.17.0)(react@18.2.0)
       react:
         specifier: ^18.2.0
