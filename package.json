@@ -1,17 +1,17 @@
 {
-  "name": "pub-test-mono",
+  "name": "pub-test-kaku-mono",
   "private": true,
-  "description": "pub-test sdk",
+  "description": "pub-test-kaku sdk",
   "scripts": {
     "prepare": "husky install",
     "build": "pnpm -r run build",
     "start": "pnpm run example",
-    "storybook": "pnpm -F pub-test run storybook",
-    "build-storybook": "pnpm -F pub-test run build-storybook",
+    "storybook": "pnpm -F pub-test-kaku run storybook",
+    "build-storybook": "pnpm -F pub-test-kaku run build-storybook",
     "test": "pnpm -r run test",
     "lint": "eslint --ext .ts,.tsx . && prettier --check .",
     "lint:fix": "eslint --fix --ext .ts,.tsx . && prettier --write .",
-    "example": "pnpm -F pub-test-example run start",
+    "example": "pnpm -F pub-test-kaku-example run start",
     "copy-docs": "esbuild-dev ./scripts/copy-docs.ts",
     "gene-docs": "pnpm -r run gene-docs"
   },
@@ -95,8 +95,8 @@
         "out": {
           "file": "package.json",
           "path": [
-            "dependencies.pub-test",
-            "dependencies.pub-test-ui"
+            "dependencies.pub-test-kaku",
+            "dependencies.pub-test-kaku-ui"
           ]
         }
       }

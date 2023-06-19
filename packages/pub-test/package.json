@@ -1,19 +1,19 @@
 {
-  "name": "pub-test",
+  "name": "pub-test-kaku",
   "version": "0.0.1",
   "private": false,
-  "description": "pub-test sdk",
+  "description": "pub-test-kaku sdk",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/guoxianzhe/pub-test.git",
-    "directory": "packages/pub-test"
+    "url": "https://github.com/guoxianzhe/pub-test-kaku.git",
+    "directory": "packages/pub-test-kaku"
   },
   "keywords": [
     "react"
   ],
   "bugs": {
-    "url": "https://github.com/guoxianzhe/pub-test/issues"
+    "url": "https://github.com/guoxianzhe/pub-test-kaku/issues"
   },
   "contributors": [
     "guoxianzhe"
@@ -21,9 +21,9 @@
   "sideEffects": false,
   "main": "src/main.ts",
   "publishConfig": {
-    "main": "dist/pub-test.js",
-    "module": "dist/pub-test.mjs",
-    "types": "dist/pub-test.d.ts"
+    "main": "dist/pub-test-kaku.js",
+    "module": "dist/pub-test-kaku.mjs",
+    "types": "dist/pub-test-kaku.d.ts"
   },
   "source": "src/main.ts",
   "files": [
@@ -70,7 +70,7 @@
     "@vitejs/plugin-react": "^3.0.0",
     "@vitest/coverage-c8": "^0.29.2",
     "@vitest/ui": "^0.30.1",
-    "pub-test-ui": "workspace:*",
+    "pub-test-kaku-ui": "workspace:*",
     "agora-rtc-sdk-ng": "^4.16.1",
     "jsdom": "^21.1.0",
     "react": "^18.2.0",

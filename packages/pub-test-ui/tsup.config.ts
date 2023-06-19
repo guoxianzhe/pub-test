@@ -2,7 +2,7 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entryPoints: {
-    "pub-test-ui": "src/main.ts",
+    "pub-test-kaku-ui": "src/main.ts",
   },
   format: ["cjs", "esm"],
   splitting: false,

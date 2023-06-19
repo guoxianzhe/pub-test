@@ -82,7 +82,7 @@ importers:
         specifier: ^4.9.5
         version: 4.9.5
 
-  packages/pub-test:
+  packages/pub-test-kaku:
     devDependencies:
       '@ngneat/falso':
         specifier: ^6.4.0
@@ -144,9 +144,9 @@ importers:
       jsdom:
         specifier: ^21.1.0
         version: 21.1.0
-      pub-test-ui:
+      pub-test-kaku-ui:
         specifier: workspace:*
-        version: link:../pub-test-ui
+        version: link:../pub-test-kaku-ui
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -172,7 +172,7 @@ importers:
         specifier: ^0.29.2
         version: 0.29.2(@vitest/ui@0.30.1)(jsdom@21.1.0)
 
-  packages/pub-test-ui:
+  packages/pub-test-kaku-ui:
     devDependencies:
       '@ngneat/falso':
         specifier: ^6.4.0
@@ -225,9 +225,9 @@ importers:
       jsdom:
         specifier: ^21.1.0
         version: 21.1.0
-      pub-test:
+      pub-test-kaku:
         specifier: workspace:*
-        version: link:../pub-test
+        version: link:../pub-test-kaku
       react:
         specifier: ^18.2.0
         version: 18.2.0

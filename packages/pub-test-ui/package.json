@@ -1,29 +1,29 @@
 {
-  "name": "pub-test-ui",
+  "name": "pub-test-kaku-ui",
   "version": "0.0.1",
   "private": false,
-  "description": "PUB-TEST UI",
+  "description": "pub-test-kaku UI",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/guoxianzhe/pub-test.git",
-    "directory": "packages/pub-test-ui"
+    "url": "https://github.com/guoxianzhe/pub-test-kaku.git",
+    "directory": "packages/pub-test-kaku-ui"
   },
   "keywords": [
     "react",
-    "pub-test-ui"
+    "pub-test-kaku-ui"
   ],
   "bugs": {
-    "url": "https://github.com/guoxianzhe/pub-test/issues"
+    "url": "https://github.com/guoxianzhe/pub-test-kaku/issues"
   },
   "contributors": [
     "guoxianzhe"
   ],
   "main": "src/main.ts",
   "publishConfig": {
-    "main": "dist/pub-test-ui.js",
-    "module": "dist/pub-test-ui.mjs",
-    "types": "dist/pub-test-ui.d.ts"
+    "main": "dist/pub-test-kaku-ui.js",
+    "module": "dist/pub-test-kaku-ui.mjs",
+    "types": "dist/pub-test-kaku-ui.d.ts"
   },
   "source": "src/main.ts",
   "files": [
@@ -46,7 +46,7 @@
   },
   "peerDependencies": {
     "react": ">=16.8",
-    "pub-test": ">=0.0.1"
+    "pub-test-kaku": ">=0.0.1"
   },
   "devDependencies": {
     "@ngneat/falso": "^6.4.0",
@@ -65,7 +65,7 @@
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.0.0",
     "@vitest/coverage-c8": "^0.29.2",
-    "pub-test": "workspace:*",
+    "pub-test-kaku": "workspace:*",
     "jsdom": "^21.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -83,7 +83,7 @@
         "out": {
           "file": "package.json",
           "path": [
-            "dependencies.pub-test"
+            "dependencies.pub-test-kaku"
           ]
         }
       }

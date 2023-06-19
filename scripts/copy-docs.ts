@@ -9,7 +9,7 @@ if (fs.existsSync(docsPath)) {
   fs.mkdirSync(docsPath);
 }
 
-const storybookPath = path.join(__dirname, "..", "packages", "pub-test", "storybook-static");
+const storybookPath = path.join(__dirname, "..", "packages", "pub-test-kaku", "storybook-static");
 if (fs.existsSync(storybookPath)) {
   fs.cpSync(storybookPath, docsPath, { recursive: true });
 }

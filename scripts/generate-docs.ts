@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const packagePath = path.join(__dirname, "..", "packages", "pub-test");
+const packagePath = path.join(__dirname, "..", "packages", "pub-test-kaku");
 const docsPath = path.join(packagePath, "docs");
 
 const docType = ["components", "hooks", "interfaces"];
