@@ -8,6 +8,10 @@ on:
         required: true
         default: "patch"
         type: string
+      releases:
+        description: "create Releases, choose false if specify version"
+        default: true
+        type: boolean
       dry-run:
         description: "Do not touch or write anything, but show the commands"
         default: true
@@ -39,7 +43,7 @@ jobs:
         if: ${{ inputs.dry-run }}
         run: |
           npm whoami
-          pnpm -F pub-test-kaku release ${{ inputs.increment }} -d --ci
+          pnpm -F pub-test-kaku release ${{ inputs.increment }} -d --ci --github.release=${{ inputs.releases }}
 
       - name: NPM Publish
         if: ${{ !inputs.dry-run }}
@@ -47,12 +51,3 @@ jobs:
           git config --global user.email "${{ secrets.GIT_EMAIL }}"
           git config --global user.name "${{ secrets.GIT_USERNAME }}"
           pnpm -F pub-test-kaku release ${{ inputs.increment }} --ci --npm.allowSameVersion
-
-      - name: Get Package Info
-        if: ${{ !inputs.dry-run }}
-        id: package-info
-        run: |
-          name=$(node -p "require('./packages/pub-test-kaku/package.json').name")
-          version=$(node -p "require('./packages/pub-test-kaku/package.json').version")
-          echo "name=${name}" >> "$GITHUB_OUTPUT"
-          echo "version=${version}" >> "$GITHUB_OUTPUT"
