@@ -56,8 +56,3 @@ jobs:
           version=$(node -p "require('./packages/pub-test-kaku/package.json').version")
           echo "name=${name}" >> "$GITHUB_OUTPUT"
           echo "version=${version}" >> "$GITHUB_OUTPUT"
-
-      - name: Release
-        if: ${{ !inputs.dry-run }}
-        run: |
-          pnpm release-it ${{ inputs.increment }} --ci --no-npm --no-git.commit
