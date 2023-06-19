@@ -82,7 +82,7 @@ importers:
         specifier: ^4.9.5
         version: 4.9.5
 
-  packages/pub-test-kaku:
+  packages/pub-test:
     devDependencies:
       '@ngneat/falso':
         specifier: ^6.4.0
@@ -146,7 +146,7 @@ importers:
         version: 21.1.0
       pub-test-kaku-ui:
         specifier: workspace:*
-        version: link:../pub-test-kaku-ui
+        version: link:../pub-test-ui
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -172,7 +172,7 @@ importers:
         specifier: ^0.29.2
         version: 0.29.2(@vitest/ui@0.30.1)(jsdom@21.1.0)
 
-  packages/pub-test-kaku-ui:
+  packages/pub-test-ui:
     devDependencies:
       '@ngneat/falso':
         specifier: ^6.4.0
@@ -227,7 +227,7 @@ importers:
         version: 21.1.0
       pub-test-kaku:
         specifier: workspace:*
-        version: link:../pub-test-kaku
+        version: link:../pub-test
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -4863,7 +4863,7 @@ packages:
     dev: true
 
   /bytes@3.0.0:
-    resolution: {integrity: sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=}
+    resolution: {integrity: sha512-pMhOfFDPiv9t5jjIXkHosWmkSyQbvsgEVNkz0ERHbuLh2T/7j4Mqqpz523Fe8MVY89KC6Sh/QfS2sM+SjgFDcw==}
     engines: {node: '>= 0.8'}
     dev: true
 
@@ -11030,6 +11030,7 @@ packages:
 
   /uuid-browser@3.1.0:
     resolution: {integrity: sha512-dsNgbLaTrd6l3MMxTtouOCFw4CBFc/3a+GgYA2YyrJvyQ1u6q4pcu3ktLoUZ/VN/Aw9WsauazbgsgdfVWgAKQg==}
+    deprecated: Package no longer supported and required. Use the uuid package or crypto.randomUUID instead
     dev: true
 
   /uuid@8.3.2:
