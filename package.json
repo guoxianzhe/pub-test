@@ -78,28 +78,5 @@
     "patchedDependencies": {
       "seedrandom@3.0.5": "patches/seedrandom@3.0.5.patch"
     }
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
-    },
-    "npm": {
-      "publish": true
-    },
-    "github": {
-      "release": true
-    },
-    "plugins": {
-      "@release-it/bumper": {
-        "out": {
-          "file": "package.json",
-          "path": [
-            "dependencies.pub-test-kaku",
-            "dependencies.pub-test-kaku-ui"
-          ]
-        }
-      }
-    }
   }
 }
