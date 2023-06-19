@@ -67,7 +67,7 @@ jobs:
         run: |
           git add examples
           git commit -m "chore(example): update examples to install ${{steps.package-info.outputs.name}}@${{steps.package-info.outputs.version}}"
-          git push origin
+          git push origin ${{ github.ref_name }}
 
       - name: Release
         if: ${{ !inputs.dry-run }}
