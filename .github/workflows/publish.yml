@@ -60,13 +60,13 @@ jobs:
       - name: Update Example
         if: ${{ !inputs.dry-run }}
         run: |
-          pnpm -F example install ${{steps.package-info.outputs.name}}@${{steps.package-info.outputs.version}}
+          pnpm -F "./examples/**" install ${{steps.package-info.outputs.name}}@${{steps.package-info.outputs.version}}
 
       - name: Commit Example
         if: ${{ !inputs.dry-run }}
         run: |
           git add example
-          git commit -m "chore(example): update example to install ${{steps.package-info.outputs.name}}@${{steps.package-info.outputs.version}}"
+          git commit -m "chore(example): update examples to install ${{steps.package-info.outputs.name}}@${{steps.package-info.outputs.version}}"
 
       - name: Release
         if: ${{ !inputs.dry-run }}
