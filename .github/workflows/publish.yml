@@ -38,6 +38,7 @@ jobs:
       - name: Dry Run Release
         if: ${{ inputs.dry-run }}
         run: |
+          npm whoami
           pnpm -F pub-test build
           pnpm -F pub-test release ${{ inputs.increment }} -d --ci
 
