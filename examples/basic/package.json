@@ -15,7 +15,7 @@
     "antd": "^5.4.7",
     "clsx": "^1.2.1",
     "crypto-js": "^4.1.1",
-    "pub-test-kaku": "^0.0.5",
+    "pub-test-kaku": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.1",
