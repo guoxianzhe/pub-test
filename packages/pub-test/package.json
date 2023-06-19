@@ -1,6 +1,6 @@
 {
   "name": "pub-test-kaku",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "private": false,
   "description": "pub-test-kaku sdk",
   "license": "MIT",
@@ -19,13 +19,13 @@
     "guoxianzhe"
   ],
   "sideEffects": false,
-  "main": "src/main.ts",
+  "main": "dist/index.js",
   "publishConfig": {
     "main": "dist/pub-test-kaku.js",
     "module": "dist/pub-test-kaku.mjs",
     "types": "dist/pub-test-kaku.d.ts"
   },
-  "source": "src/main.ts",
+  "source": "src/index.ts",
   "files": [
     "dist"
   ],
