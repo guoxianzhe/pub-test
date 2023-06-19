@@ -71,4 +71,4 @@ jobs:
       - name: Release
         if: ${{ !inputs.dry-run }}
         run: |
-          pnpm release ${{ inputs.increment }} --ci --no-npm --no-git.commit
+          pnpm release-it ${{ inputs.increment }} --ci --no-npm --no-git.commit
