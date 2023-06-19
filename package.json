@@ -1,0 +1,106 @@
+{
+  "name": "pub-test-mono",
+  "private": true,
+  "description": "pub-test sdk",
+  "scripts": {
+    "prepare": "husky install",
+    "build": "pnpm -r run build",
+    "release": "pnpm -F pub-test release",
+    "start": "pnpm run example",
+    "storybook": "pnpm -F pub-test run storybook",
+    "build-storybook": "pnpm -F pub-test run build-storybook",
+    "test": "pnpm -r run test",
+    "lint": "eslint --ext .ts,.tsx . && prettier --check .",
+    "lint:fix": "eslint --fix --ext .ts,.tsx . && prettier --write .",
+    "example": "pnpm -F pub-test-example run start",
+    "copy-docs": "esbuild-dev ./scripts/copy-docs.ts",
+    "gene-docs": "pnpm -r run gene-docs"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.6.1",
+    "@hyrious/esbuild-dev": "^0.9.1",
+    "@release-it/bumper": "^4.0.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "commitlint": "^17.6.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "minimist": "^1.2.8",
+    "prettier": "^2.8.4",
+    "release-it": "^15.10.3",
+    "typescript": "^4.9.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "cross-env NODE_ENV=development eslint --cache"
+    ],
+    "*.json,.{eslintrc,prettierrc}": [
+      "prettier --ignore-path .eslintignore --parser json --write"
+    ],
+    "*.{css,scss}": [
+      "prettier --ignore-path .eslintignore --write"
+    ],
+    "*.{html,md,mdx,yml}": [
+      "prettier --ignore-path .eslintignore --write"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test",
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+    }
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "rollup",
+        "esbuild"
+      ]
+    },
+    "overrides": {
+      "nodeunit": "npm:noop-package@1.0.0"
+    },
+    "patchedDependencies": {
+      "seedrandom@3.0.5": "patches/seedrandom@3.0.5.patch"
+    }
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/bumper": {
+        "out": {
+          "file": "package.json",
+          "path": [
+            "dependencies.pub-test",
+            "dependencies.pub-test-ui"
+          ]
+        }
+      }
+    }
+  }
+}

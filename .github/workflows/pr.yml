@@ -1,0 +1,45 @@
+on: ["pull_request"]
+
+name: Build and Test PR
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Required to checkout the code
+      contents: read
+      # Required to put a comment into the pull-request
+      pull-requests: write
+
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Install pnpm 🤏🏻
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: latest
+
+      - name: Setup Node 💚
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "pnpm"
+
+      - name: Build 🔧
+        run: |
+          pnpm install
+          pnpm run lint
+          pnpm run test
+          pnpm run build
+
+      - name: Report Coverage 🟢
+        if: always() # Also generate the report if tests are failing
+        uses: davelosert/vitest-coverage-report-action@v1.4.0
+        with:
+          working-directory: "./packages/pub-test"
