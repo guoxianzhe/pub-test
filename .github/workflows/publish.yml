@@ -48,7 +48,7 @@ jobs:
       - name: Update VERSION
         if: ${{ !inputs.dry-run }}
         run: |
-          pnpm -F pub-test-kaku update-version target:agora-rtc-react @${{ inputs.increment }}
+          pnpm -F pub-test-kaku update-version target:pub-test-kaku @${{ inputs.increment }}
 
       - name: NPM Publish
         if: ${{ !inputs.dry-run }}

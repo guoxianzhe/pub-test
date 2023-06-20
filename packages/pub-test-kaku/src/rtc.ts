@@ -1,11 +1,13 @@
+import AgoraRTC from "agora-rtc-sdk-ng";
+
 class AgoraRTCReact {
   readonly appType = 1001;
 
   public constructor() {
-    console.log(1);
+    AgoraRTC.setAppType(this.appType);
   }
 }
 
-const instance = new AgoraRTCReact();
+new AgoraRTCReact();
 
-export { instance as AgoraRTCReact };
+export const VERSION = "1.1.0";
