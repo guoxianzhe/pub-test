@@ -45,6 +45,11 @@ jobs:
           npm whoami
           pnpm -F pub-test-kaku release ${{ inputs.increment }} -d --ci --github.release=${{ inputs.releases }}
 
+      - name: Update VERSION
+        if: ${{ !inputs.dry-run }}
+        run: |
+          pnpm -F pub-test-kaku update-version target:agora-rtc-react @${{ inputs.increment }}
+
       - name: NPM Publish
         if: ${{ !inputs.dry-run }}
         run: |
