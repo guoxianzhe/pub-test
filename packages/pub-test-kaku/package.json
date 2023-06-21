@@ -27,7 +27,8 @@
   },
   "source": "src/index.ts",
   "files": [
-    "dist"
+    "dist",
+    "LICENSE"
   ],
   "engines": {
     "node": ">=10"
