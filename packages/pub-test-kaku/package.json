@@ -99,7 +99,6 @@
     },
     "plugins": {
       "@release-it/conventional-changelog": {
-        "header": "# agora-rtc-react",
         "preset": {
           "name": "conventionalcommits",
           "types": [
