@@ -85,13 +85,6 @@
     "vitest": "^0.29.2"
   },
   "release-it": {
-    "git": false,
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "header": "# agora-rtc-react",
-        "preset": "angular",
-        "infile": "../../CHANGELOG.md"
-      }
-    }
+    "git": false
   }
 }
