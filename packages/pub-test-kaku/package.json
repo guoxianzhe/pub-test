@@ -101,7 +101,7 @@
       "@release-it/conventional-changelog": {
         "header": "# agora-rtc-react",
         "preset": {
-          "name": "angular",
+          "name": "conventionalcommits",
           "types": [
             {
               "type": "feat",
