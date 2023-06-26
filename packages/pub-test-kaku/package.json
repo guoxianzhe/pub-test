@@ -92,6 +92,7 @@
       }
     },
     "git": {
+      "addUntrackedFiles": true,
       "commitMessage": "chore: release ${version}",
       "requireCleanWorkingDir": false,
       "tagName": "v${version}"
