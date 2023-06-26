@@ -85,6 +85,16 @@
     "vitest": "^0.29.2"
   },
   "release-it": {
-    "git": false
+    "git": false,
+    "plugins": {
+      "@release-it/bumper": {
+        "out": {
+          "file": "package.json",
+          "path": [
+            "dependencies.pub-test-kaku-ui"
+          ]
+        }
+      }
+    }
   }
 }
