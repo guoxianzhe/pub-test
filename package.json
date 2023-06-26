@@ -14,7 +14,7 @@
     "example": "pnpm -F pub-test-kaku-example run start",
     "copy-docs": "esbuild-dev ./scripts/copy-docs.ts",
     "gene-docs": "pnpm -r run gene-docs",
-    "release": "pnpm -F pub-test-kaku run release && release-it"
+    "release": "pnpm -F pub-test-kaku exec release-it"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.6.1",
