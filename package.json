@@ -84,12 +84,10 @@
   "release-it": {
     "git": {
       "commitMessage": "chore: update CHANGELOG.md",
-      "requireCleanWorkingDir": false,
-      "tag": false
+      "requireCleanWorkingDir": false
     },
     "npm": {
-      "publish": false,
-      "allowSameVersion": true
+      "publish": false
     },
     "github": {
       "release": false
