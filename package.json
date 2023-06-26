@@ -2,6 +2,9 @@
   "name": "pub-test-kaku-mono",
   "private": true,
   "description": "pub-test-kaku sdk",
+  "workspaces": [
+    "packages/pub-test-kaku"
+  ],
   "scripts": {
     "prepare": "husky install",
     "build": "pnpm -r run build",
@@ -14,7 +17,7 @@
     "example": "pnpm -F pub-test-kaku-example run start",
     "copy-docs": "esbuild-dev ./scripts/copy-docs.ts",
     "gene-docs": "pnpm -r run gene-docs",
-    "release": "pnpm -F pub-test-kaku release"
+    "release": "npm run release --workspaces && release-it"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.6.1",
