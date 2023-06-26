@@ -1,3 +1,9 @@
+## [0.0.32](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.31...v0.0.32) (2023-06-26)
+
+### Bug Fixes
+
+- release ([c9b9b44](https://github.com/guoxianzhe/pub-test-kaku/commit/c9b9b44baa85deb8ac26fa4d0c6c7393eed698cc))
+
 # agora-rtc-react
 
 ## [0.0.30](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.29...v0.0.30) (2023-06-26)
