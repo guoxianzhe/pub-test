@@ -1,5 +1,11 @@
 # agora-rtc-react
 
+## [0.0.27](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.26...v0.0.27) (2023-06-26)
+
+### Bug Fixes
+
+- release ([7441c5e](https://github.com/guoxianzhe/pub-test-kaku/commit/7441c5ec6bc0459e469ec03ee2da03587b150df4))
+
 ## [0.0.26](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.25...v0.0.26) (2023-06-26)
 
 ### Bug Fixes
