@@ -85,20 +85,6 @@
     "vitest": "^0.29.2"
   },
   "release-it": {
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "header": "# agora-rtc-react",
-        "preset": "angular"
-      }
-    },
-    "git": {
-      "addUntrackedFiles": true,
-      "commitMessage": "chore: release ${version}",
-      "requireCleanWorkingDir": false,
-      "tagName": "v${version}"
-    },
-    "npm": {
-      "publish": true
-    }
+    "git": false
   }
 }
