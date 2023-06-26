@@ -2,9 +2,6 @@
   "name": "pub-test-kaku-mono",
   "private": true,
   "description": "pub-test-kaku sdk",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "prepare": "husky install",
     "build": "pnpm -r run build",
@@ -17,7 +14,7 @@
     "example": "pnpm -F pub-test-kaku-example run start",
     "copy-docs": "esbuild-dev ./scripts/copy-docs.ts",
     "gene-docs": "pnpm -r run gene-docs",
-    "release": "release-it --workspaces"
+    "release": "pnpm -F pub-test-kaku release"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.6.1",
@@ -103,6 +100,5 @@
         "infile": "CHANGELOG.md"
       }
     }
-  },
-  "version": "0.0.22"
+  }
 }
