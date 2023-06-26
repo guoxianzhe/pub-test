@@ -87,6 +87,7 @@
   "release-it": {
     "plugins": {
       "@release-it/conventional-changelog": {
+        "header": "# agora-rtc-react",
         "preset": "angular",
         "infile": ""
       }
