@@ -100,7 +100,23 @@
     "plugins": {
       "@release-it/conventional-changelog": {
         "header": "# agora-rtc-react",
-        "preset": "angular",
+        "preset": {
+          "name": "angular",
+          "types": [
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {
+              "type": "docs",
+              "section": "Documentation"
+            }
+          ]
+        },
         "infile": ""
       }
     }

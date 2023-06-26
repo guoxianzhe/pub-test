@@ -54,7 +54,7 @@ jobs:
       - name: Update CHANGELOG.md
         if: ${{ !inputs.dry-run }}
         run: |
-          pnpm release ${{ inputs.increment }} --ci --no-git.tag --no-github.release --npm.allowSameVersion --no-git.commit
+          pnpm release ${{ inputs.increment }} --ci --no-git.tag --no-github.release --npm.allowSameVersion
 
       - name: Update VERSION
         if: ${{ !inputs.dry-run }}

@@ -84,7 +84,7 @@
   },
   "release-it": {
     "git": {
-      "commitMessage": "chore: update CHANGELOG.md",
+      "commitMessage": "docs: update CHANGELOG.md",
       "requireCleanWorkingDir": false
     },
     "npm": {
