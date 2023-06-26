@@ -96,5 +96,6 @@
         "infile": "CHANGELOG.md"
       }
     }
-  }
+  },
+  "version": "0.0.36"
 }
