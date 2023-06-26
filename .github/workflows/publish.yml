@@ -45,11 +45,6 @@ jobs:
           npm whoami
           pnpm -F pub-test-kaku release ${{ inputs.increment }} -d --ci
 
-      - name: Update VERSION
-        if: ${{ !inputs.dry-run }}
-        run: |
-          pnpm -F pub-test-kaku exec esbuild-dev $PWD/scripts/update-version.ts target:pub-test-kaku @${{ inputs.increment }}
-
       - name: Create Release
         if: ${{ !inputs.dry-run }}
         run: |
@@ -59,7 +54,12 @@ jobs:
       - name: Update CHANGELOG.md
         if: ${{ !inputs.dry-run }}
         run: |
-          pnpm release ${{ inputs.increment }} --ci --no-git.tag --no-github.release --npm.allowSameVersion
+          pnpm release ${{ inputs.increment }} --ci --no-git.tag --no-github.release --npm.allowSameVersion --no-git.commit
+
+      - name: Update VERSION
+        if: ${{ !inputs.dry-run }}
+        run: |
+          pnpm -F pub-test-kaku exec esbuild-dev $PWD/scripts/update-version.ts target:pub-test-kaku @${{ inputs.increment }}
 
       - name: NPM Publish
         if: ${{ !inputs.dry-run }}
