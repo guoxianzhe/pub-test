@@ -89,7 +89,7 @@
       "@release-it/conventional-changelog": {
         "header": "# agora-rtc-react",
         "preset": "angular",
-        "infile": "CHANGELOG.md"
+        "infile": "${PWD}/CHANGELOG.md"
       }
     },
     "git": {
