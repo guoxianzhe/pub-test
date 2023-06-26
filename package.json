@@ -3,7 +3,7 @@
   "private": true,
   "description": "pub-test-kaku sdk",
   "workspaces": [
-    "packages/pub-test-kaku"
+    "packages/*"
   ],
   "scripts": {
     "prepare": "husky install",
@@ -95,13 +95,6 @@
     },
     "github": {
       "release": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "header": "# agora-rtc-react",
-        "preset": "angular",
-        "infile": "CHANGELOG.md"
-      }
     }
   }
 }

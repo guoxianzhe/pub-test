@@ -287,6 +287,9 @@ importers:
       jsdom:
         specifier: ^21.1.0
         version: 21.1.0
+      pub-test-kaku-ui:
+        specifier: workspace:*
+        version: link:../pub-test-ui
       react:
         specifier: ^18.2.0
         version: 18.2.0
