@@ -1,3 +1,9 @@
+## [0.0.34](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.33...v0.0.34) (2023-06-26)
+
+### Bug Fixes
+
+- release ([55b3521](https://github.com/guoxianzhe/pub-test-kaku/commit/55b3521fb080a0c53080c6eff6f0cde950393e3f))
+
 ## [0.0.33](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.32...v0.0.33) (2023-06-26)
 
 ### Bug Fixes
