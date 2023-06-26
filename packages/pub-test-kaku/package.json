@@ -84,6 +84,13 @@
     "vitest": "^0.29.2"
   },
   "release-it": {
-    "git": false
+    "git": false,
+    "npm": {
+      "publish": true,
+      "allowSameVersion": true
+    },
+    "github": {
+      "release": false
+    }
   }
 }

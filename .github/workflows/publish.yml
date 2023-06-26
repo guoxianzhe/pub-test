@@ -50,9 +50,18 @@ jobs:
         run: |
           pnpm -F pub-test-kaku exec esbuild-dev $PWD/scripts/update-version.ts target:pub-test-kaku @${{ inputs.increment }}
 
-      - name: NPM Publish
+      - name: Create Release
         if: ${{ !inputs.dry-run }}
         run: |
           git config --global user.email "${{ secrets.GIT_EMAIL }}"
           git config --global user.name "${{ secrets.GIT_USERNAME }}"
-          pnpm release ${{ inputs.increment }} --ci --npm.allowSameVersion --github.release=${{ inputs.releases }}
+
+      - name: Create Release and Tag
+        if: ${{ !inputs.dry-run }}
+        run: |
+          pnpm release ${{ inputs.increment }} --ci --github.release=${{ inputs.releases }}
+
+      - name: NPM Publish
+        if: ${{ !inputs.dry-run }}
+        run: |
+          pnpm -F pub-test-kaku release ${{ inputs.increment }} --ci --github.release=${{ inputs.releases }}
