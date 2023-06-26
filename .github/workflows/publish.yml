@@ -55,4 +55,4 @@ jobs:
         run: |
           git config --global user.email "${{ secrets.GIT_EMAIL }}"
           git config --global user.name "${{ secrets.GIT_USERNAME }}"
-          pnpm release ${{ inputs.increment }} --ci --npm.allowSameVersion --github.release=${{ inputs.releases }}
+          pnpm -F pub-test-kaku release ${{ inputs.increment }} --ci --npm.allowSameVersion --github.release=${{ inputs.releases }}
