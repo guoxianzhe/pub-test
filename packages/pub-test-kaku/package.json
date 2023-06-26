@@ -86,16 +86,16 @@
   },
   "release-it": {
     "git": {
-      "commit": false,
-      "tag": false,
-      "push": false
+      "commitMessage": "chore: release ${version}",
+      "requireCleanWorkingDir": false,
+      "tagName": "v${version}"
     },
     "npm": {
       "publish": true,
       "allowSameVersion": true
     },
     "github": {
-      "release": false
+      "release": true
     }
   }
 }
