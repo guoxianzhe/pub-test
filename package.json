@@ -87,13 +87,11 @@
       "requireCleanWorkingDir": false
     },
     "npm": {
-      "publish": false
+      "publish": false,
+      "ignoreVersion": true
     },
     "github": {
       "release": false
-    },
-    "hooks": {
-      "before:git:commit": "git reset HEAD package.json"
     },
     "plugins": {
       "@release-it/conventional-changelog": {
@@ -101,6 +99,5 @@
         "infile": "CHANGELOG.md"
       }
     }
-  },
-  "version": "0.0.34"
+  }
 }
