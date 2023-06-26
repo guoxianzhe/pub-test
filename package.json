@@ -86,10 +86,7 @@
       "commitMessage": "docs: update CHANGELOG.md",
       "requireCleanWorkingDir": false
     },
-    "npm": {
-      "publish": false,
-      "ignoreVersion": true
-    },
+    "npm": false,
     "github": {
       "release": false
     },
@@ -99,6 +96,5 @@
         "infile": "CHANGELOG.md"
       }
     }
-  },
-  "version": "0.0.35"
+  }
 }
