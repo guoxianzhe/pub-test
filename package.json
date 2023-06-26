@@ -1,5 +1,6 @@
 {
   "name": "pub-test-kaku-mono",
+  "version": "0.0.36",
   "private": true,
   "description": "pub-test-kaku sdk",
   "scripts": {
@@ -96,6 +97,5 @@
         "infile": "CHANGELOG.md"
       }
     }
-  },
-  "version": "0.0.36"
+  }
 }
