@@ -1,3 +1,12 @@
+# agora-rtc-react
+
+## [0.0.37-rc1](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.36...v0.0.37-rc1) (2023-06-26)
+
+### Bug Fixes
+
+- release ([6da709a](https://github.com/guoxianzhe/pub-test-kaku/commit/6da709a820beb7eab6408b652bd0be23d45d983c))
+- release ([3a07ed4](https://github.com/guoxianzhe/pub-test-kaku/commit/3a07ed49e2fbe87e69b0335a978e6e7f0c19b9c2))
+
 ## [0.0.36](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.35...v0.0.36) (2023-06-26)
 
 ### Bug Fixes
@@ -27,8 +36,6 @@
 ### Bug Fixes
 
 - release ([c9b9b44](https://github.com/guoxianzhe/pub-test-kaku/commit/c9b9b44baa85deb8ac26fa4d0c6c7393eed698cc))
-
-# agora-rtc-react
 
 ## [0.0.30](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.29...v0.0.30) (2023-06-26)
 
