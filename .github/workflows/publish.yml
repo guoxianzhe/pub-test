@@ -43,7 +43,7 @@ jobs:
         if: ${{ inputs.dry-run }}
         run: |
           npm whoami
-          pnpm -F pub-test-kaku release ${{ inputs.increment }} -d --ci --github.release=${{ inputs.releases }}
+          pnpm -F pub-test-kaku release ${{ inputs.increment }} -d --ci
 
       - name: Update VERSION
         if: ${{ !inputs.dry-run }}
@@ -59,7 +59,7 @@ jobs:
       - name: Update CHANGELOG.md
         if: ${{ !inputs.dry-run }}
         run: |
-          pnpm release ${{ inputs.increment }} --ci --github.release=${{ inputs.releases }} --no-git.tag --no-github.release --npm.allowSameVersion
+          pnpm release ${{ inputs.increment }} --ci --no-git.tag --no-github.release --npm.allowSameVersion
 
       - name: NPM Publish
         if: ${{ !inputs.dry-run }}
