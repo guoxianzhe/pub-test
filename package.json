@@ -1,6 +1,6 @@
 {
   "name": "pub-test-kaku-mono",
-  "version": "0.0.37-rc1",
+  "version": "0.0.36-alpha.0",
   "private": true,
   "description": "pub-test-kaku sdk",
   "scripts": {
