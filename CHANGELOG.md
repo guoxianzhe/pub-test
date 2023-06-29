@@ -1,5 +1,11 @@
 # agora-rtc-react
 
+## [0.0.45](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.44...v0.0.45) (2023-06-29)
+
+### Bug Fixes
+
+- ci ([978aa06](https://github.com/guoxianzhe/pub-test-kaku/commit/978aa0675a9ff6cd73da178a505300b5f9fe8bf6))
+
 ## [0.0.44](https://github.com/guoxianzhe/pub-test-kaku/compare/v0.0.43...v0.0.44) (2023-06-29)
 
 ### Bug Fixes
