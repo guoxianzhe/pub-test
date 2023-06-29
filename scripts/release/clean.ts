@@ -17,8 +17,6 @@ if (args.length < 2 || !args[0].startsWith("source:") || !args[1].includes("@"))
 const source = args[0].substring(7);
 const output = args[1].substring(args[1].lastIndexOf("@") + 1);
 
-console.log(source, output);
-
 fs.readFile(source, "utf8", (err, data) => {
   if (err) throw err;
 
