@@ -34,7 +34,6 @@
     "node": ">=10"
   },
   "scripts": {
-    "prepublishOnly": "pnpm run build",
     "build": "tsup",
     "release": "release-it",
     "start": "pnpm run -F example-overview start",
@@ -98,7 +97,7 @@
       "release": true
     },
     "hooks": {
-      "before:npm:release": "pnpm esbuild-dev ../../scripts/release/clean.ts source:./package.json @./package.json && pnpm eslint --fix package.json && cp ../../LICENSE ."
+      "before:npm:release": "pnpm esbuild-dev ../../scripts/release/clean.ts source:./package.json @./package.json && pnpm eslint --fix package.json && cp ../../LICENSE . && pnpm run build"
     },
     "plugins": {
       "@release-it/conventional-changelog": {

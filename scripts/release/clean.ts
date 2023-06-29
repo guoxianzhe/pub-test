@@ -22,7 +22,7 @@ fs.readFile(source, "utf8", (err, data) => {
 
   const pkg = JSON.parse(data);
 
-  // delete pkg.scripts;
+  delete pkg.scripts;
   delete pkg.devDependencies;
   delete pkg["release-it"];
   delete pkg.source;
