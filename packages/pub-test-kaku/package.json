@@ -97,7 +97,7 @@
       "release": true
     },
     "hooks": {
-      "before:npm:release": "pnpm esbuild-dev ../../scripts/release/clean.ts source:./package.json @./package.json && pnpm eslint --fix package.json && cp ../../LICENSE . && pnpm run build"
+      "before:npm:release": "pnpm esbuild-dev ../../scripts/release/clean.ts source:./package.json @./package.json && pnpm eslint --fix package.json && cp ../../LICENSE . && pnpm tsup"
     },
     "plugins": {
       "@release-it/conventional-changelog": {
