@@ -19,11 +19,11 @@
     "guoxianzhe"
   ],
   "sideEffects": false,
-  "main": "dist/index.js",
+  "main": "dist/pub-test-kaku.js",
   "publishConfig": {
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.ts"
+    "main": "dist/pub-test-kaku.js",
+    "module": "dist/pub-test-kaku.mjs",
+    "types": "dist/pub-test-kaku.d.ts"
   },
   "source": "src/index.ts",
   "files": [

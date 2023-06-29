@@ -27,6 +27,7 @@ fs.readFile(source, "utf8", (err, data) => {
   delete pkg.scripts;
   delete pkg.devDependencies;
   delete pkg["release-it"];
+  delete pkg.source;
   // delete pkg["publish-config"];
   pkg["main"] = `dist/${pkg.name}.js`;
 
