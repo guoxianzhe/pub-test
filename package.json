@@ -1,6 +1,5 @@
 {
   "name": "pub-test-kaku-mono",
-  "version": "0.0.37-alpha.0",
   "private": true,
   "description": "pub-test-kaku sdk",
   "scripts": {
@@ -90,6 +89,9 @@
     "npm": false,
     "github": {
       "release": false
+    },
+    "hooks": {
+      "before:git:release": "git reset HEAD package.json"
     },
     "plugins": {
       "@release-it/conventional-changelog": {
