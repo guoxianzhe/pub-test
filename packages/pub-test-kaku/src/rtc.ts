@@ -10,4 +10,4 @@ class AgoraRTCReact {
 
 new AgoraRTCReact();
 
-export const VERSION = "0.0.37";
+export const VERSION = "0.0.38";
