@@ -19,6 +19,7 @@
     "guoxianzhe"
   ],
   "sideEffects": false,
+  "main": "src/index.ts",
   "publishConfig": {
     "main": "dist/pub-test-kaku.js",
     "module": "dist/pub-test-kaku.mjs",
