@@ -13,12 +13,3 @@ const storybookPath = path.join(__dirname, "..", "packages", "pub-test-kaku", "s
 if (fs.existsSync(storybookPath)) {
   fs.cpSync(storybookPath, docsPath, { recursive: true });
 }
-
-for (const exampleName of fs.readdirSync("examples")) {
-  if (exampleName.startsWith(".")) continue;
-
-  const examplePath = path.join("examples", exampleName, "dist");
-  if (fs.existsSync(examplePath) && fs.lstatSync(examplePath).isDirectory()) {
-    fs.cpSync(examplePath, path.join(docsPath, exampleName), { recursive: true });
-  }
-}
