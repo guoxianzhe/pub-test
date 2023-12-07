@@ -37,7 +37,7 @@ jobs:
 
       - name: Setup Dependencies 💚
         run: |
-          pnpm install --no-frozen-lockfile
+          pnpm install
 
       - name: Setup NPM auth token
         run: |
