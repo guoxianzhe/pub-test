@@ -67,4 +67,4 @@ jobs:
       - name: NPM Publish
         if: ${{ !inputs.dry-run }}
         run: |
-          pnpm -F ${{ inputs.package }} release ${{ inputs.increment }} --ci --github.release=${{ inputs.releases }}
+          pnpm -F ${{ inputs.package }} release ${{ inputs.increment }} --ci --github.release=true
